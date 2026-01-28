@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="description" content="AM Softs Privacy Policy for our mobile game." />
+  <title>AM Softs - Privacy Policy</title>
+
+  <style>
+    :root{
+      --bg: #ffffff;
+      --card: #f6f7f9;
+      --text: #111827;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+      --link: #1d4ed8;
+      --focus: #111827;
+
+      --radius: 14px;
+      --maxw: 920px;
+      --pad: 20px;
+      --shadow: 0 10px 22px rgba(0,0,0,.06);
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root{
+        --bg: #0b1220;
+        --card: #0f1a2e;
+        --text: #e5e7eb;
+        --muted: #a3aab6;
+        --border: rgba(229,231,235,.16);
+        --link: #93c5fd;
+        --focus: #e5e7eb;
+        --shadow: 0 12px 28px rgba(0,0,0,.35);
+      }
+    }
+
+    *{ box-sizing: border-box; }
+    html, body { height: 100%; }
+    body{
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a{
+      color: var(--link);
+      text-decoration: none;
+    }
+    a:hover{ text-decoration: underline; }
+
+    .skip-link{
+      position:absolute;
+      left:-999px;
+      top:auto;
+      width:1px;
+      height:1px;
+      overflow:hidden;
+    }
+    .skip-link:focus{
+      left: 16px;
+      top: 16px;
+      width: auto;
+      height: auto;
+      padding: 10px 12px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      outline: 2px solid var(--focus);
+      z-index: 1000;
+    }
+
+    header{
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(10px);
+      background: color-mix(in oklab, var(--bg) 85%, transparent);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 var(--pad);
+    }
+
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 0;
+    }
+
+    .brand{
+      display:flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .brand h1{
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.2;
+      letter-spacing: .2px;
+    }
+
+    .brand .meta{
+      margin: 0;
+      font-size: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      box-shadow: none;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .btn:focus{
+      outline: 2px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    main{
+      padding: 22px 0 60px;
+    }
+
+    .hero{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px 18px;
+      margin: 18px 0 18px;
+    }
+
+    .hero h2{
+      margin: 0 0 6px;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+    .hero p{
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 900px){
+      .grid{
+        grid-template-columns: 320px 1fr;
+        align-items: start;
+      }
+    }
+
+    nav.toc{
+      position: relative;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px 14px;
+    }
+    @media (min-width: 900px){
+      nav.toc{
+        position: sticky;
+        top: 74px;
+      }
+    }
+
+    .toc h3{
+      margin: 0 0 10px;
+      font-size: 14px;
+      letter-spacing: .2px;
+    }
+    .toc a{
+      display:block;
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      color: var(--text);
+      font-size: 13px;
+    }
+    .toc a:hover{
+      background: color-mix(in oklab, var(--card) 60%, var(--bg));
+      text-decoration: none;
+      border-color: var(--border);
+    }
+    .toc a:focus{
+      outline: 2px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    article{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px 18px;
+      min-width: 0;
+    }
+
+    section{
+      scroll-margin-top: 92px;
+      padding-top: 6px;
+      margin-top: 6px;
+      border-top: 1px dashed color-mix(in oklab, var(--border) 70%, transparent);
+    }
+    section:first-of-type{
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    h3{
+      margin: 16px 0 8px;
+      font-size: 16px;
+    }
+
+    p{ margin: 10px 0; }
+
+    ul{
+      margin: 10px 0 10px 20px;
+      padding: 0;
+    }
+    li{ margin: 6px 0; }
+
+    .callout{
+      margin: 12px 0;
+      padding: 12px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: color-mix(in oklab, var(--card) 65%, var(--bg));
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer{
+      border-top: 1px solid var(--border);
+      padding: 18px 0 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media print{
+      header, nav.toc, .btn { display:none !important; }
+      body{ background: #fff; color: #000; }
+      article, .hero{ box-shadow:none; }
+      a{ color: #000; text-decoration: underline; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header>
+    <div class="wrap">
+      <div class="topbar">
+        <div class="brand">
+          <h1>AM Softs — Privacy Policy</h1>
+          <p class="meta">Effective Date: January 17, 2026</p>
+        </div>
+        <button class="btn" type="button" onclick="window.print()" aria-label="Print this page">
+          Print
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap" id="content">
+    <div class="hero">
+      <h2>Privacy Policy</h2>
+      <p>
+        This Privacy Policy explains how AM Softs ("we", "our", "us") handles information when you use
+        our mobile game (the "Game"). The Game is intended for a general audience, including children (7+),
+        and contains fantasy-style combat (cartoon/fantasy fighting, not realistic violence).
+      </p>
+    </div>
+
+    <div class="grid">
+      <nav class="toc" aria-label="Table of contents">
+        <h3>Contents</h3>
+        <a href="#info">1. Information We Collect</a>
+        <a href="#use">2. How We Use Information</a>
+        <a href="#ads">3. Advertising (Google AdMob)</a>
+        <a href="#personalized">4. Personalized vs Non-Personalized Ads</a>
+        <a href="#sharing">5. Sharing of Information</a>
+        <a href="#children">6. Children’s Privacy</a>
+        <a href="#retention">7. Data Retention</a>
+        <a href="#security">8. Security</a>
+        <a href="#changes">9. Changes to This Policy</a>
+        <a href="#contact">10. Contact Us</a>
+      </nav>
+
+      <article aria-label="Privacy policy details">
+        <div class="callout">
+          <strong>Summary:</strong> We don’t require accounts and we don’t ask for personal details like your name,
+          phone number, address, or photos. Some limited data may be collected automatically for ads, fraud prevention,
+          and app stability (for example, crash logs).
+        </div>
+
+        <section id="info">
+          <h3>1. Information We Collect</h3>
+          <p>
+            We do not require account registration, and we do not ask players to provide personal details such as a name,
+            phone number, address, or photos.
+          </p>
+          <p>
+            To support ads and maintain the Game, certain information may be collected automatically by the Game and our
+            advertising partner:
+          </p>
+          <ul>
+            <li><strong>Device and app information:</strong> device model, operating system version, app version, language, and basic diagnostics (such as crash logs).</li>
+            <li><strong>Approximate location:</strong> derived from IP address for general purposes such as ad delivery and fraud prevention (not precise GPS).</li>
+            <li><strong>Ad interaction data:</strong> ad impressions, clicks (if any), and related performance measurements.</li>
+          </ul>
+        </section>
+
+        <section id="use">
+          <h3>2. How We Use Information</h3>
+          <p>We use information to:</p>
+          <ul>
+            <li>Serve and display ads in the Game.</li>
+            <li>Measure ad performance and prevent fraud.</li>
+            <li>Improve Game stability and fix bugs (for example, crash analysis).</li>
+            <li>Comply with legal requirements.</li>
+          </ul>
+        </section>
+
+        <section id="ads">
+          <h3>3. Advertising (Google AdMob)</h3>
+          <p>
+            The Game uses Google AdMob to display advertisements. AdMob may collect and process information to show ads,
+            measure performance, limit frequency, and detect invalid traffic or fraud.
+          </p>
+          <p>
+            Because the Game may be used by children (7+), we aim to use age-appropriate ad settings and show
+            non-personalized ads for users who are children or under the applicable age of consent.
+          </p>
+          <p>
+            Google privacy and advertising information:
+          </p>
+          <ul>
+            <li>
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+                Google Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">
+                Google Advertising &amp; Ads Technologies
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section id="personalized">
+          <h3>4. Personalized vs Non-Personalized Ads</h3>
+          <p>
+            Where required by law (for example, EEA/UK), consent may be requested for personalized ads. If consent is not
+            provided, non-personalized ads may still be shown.
+          </p>
+          <p>
+            You can also control ad personalization from your device settings (options vary by Android version):
+            <strong>Settings → Google → Ads</strong>.
+          </p>
+        </section>
+
+        <section id="sharing">
+          <h3>5. Sharing of Information</h3>
+          <p>We do not sell personal information. We may share limited information:</p>
+          <ul>
+            <li>With Google AdMob to serve ads, provide reporting, and prevent fraud.</li>
+            <li>With service providers that help operate the Game (for example, hosting or diagnostics), if used.</li>
+            <li>With legal authorities if required to comply with law or to protect users and the integrity of the Game.</li>
+          </ul>
+        </section>
+
+        <section id="children">
+          <h3>6. Children’s Privacy</h3>
+          <p>
+            We do not knowingly collect personal information from children. If you are a parent or guardian and believe a
+            child has provided personal information, please contact us and we will take appropriate steps to delete it.
+          </p>
+        </section>
+
+        <section id="retention">
+          <h3>7. Data Retention</h3>
+          <p>
+            We keep information only as long as needed for the purposes described in this policy (ads, security,
+            diagnostics, and legal compliance). Advertising partners may retain data according to their own policies.
+          </p>
+        </section>
+
+        <section id="security">
+          <h3>8. Security</h3>
+          <p>
+            We take reasonable measures to protect information, but no method of transmission or storage is completely
+            secure.
+          </p>
+        </section>
+
+        <section id="changes">
+          <h3>9. Changes to This Policy</h3>
+          <p>
+            We may update this Privacy Policy from time to time. The updated version will be posted with a revised
+            effective date.
+          </p>
+        </section>
+
+        <section id="contact">
+          <h3>10. Contact Us</h3>
+          <p>
+            If you have questions about this Privacy Policy, contact:
+            <a href="mailto:mseriesproduction2018@gmail.com">mseriesproduction2018@gmail.com</a>
+          </p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        © <span id="y">2026</span> AM Softs. All rights reserved.
+      </div>
+      <script>
+        // Keeps the footer year fresh without changing your policy text.
+        document.getElementById("y").textContent = String(new Date().getFullYear());
+      </script>
+    </div>
+  </footer>
+</body>
+</html>
